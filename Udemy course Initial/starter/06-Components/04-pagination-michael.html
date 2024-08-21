@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion 1</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      a:hover,
+      .icon {
+        background-color: green;
+        border-color: 8px solid green;
+        color: white;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+      }
+      a:focus {
+        font-size: 34px;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        background-color: white;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        margin: auto;
+        gap: 20px;
+        margin-top: 400px;
+        width: 300px;
+        height: 100px;
+      }
+      .numbers {
+        text-decoration: none;
+        display: flex;
+        font-size: 24px;
+        color: black;
+      }
+      .btn {
+        border: none;
+        background-color: white;
+        border-color: 8px solid green;
+      }
+
+      .icon {
+        stroke: green;
+        width: 24px;
+        height: 24px;
+        background-color: white;
+        border-radius: 50%;
+        border: none;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button class="btn btn--left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5 8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <a href="#" class="numbers">1</a>
+      <a href="#" class="numbers">2</a>
+      <a href="#" class="numbers">3</a>
+      <a href="#" class="numbers">4</a>
+      <a href="#" class="numbers">5</a>
+      <a href="#" class="numbers">6</a>
+      <a href="#" class="numbers">...</a>
+      <a href="#" class="numbers">23</a>
+      <button class="btn btn--right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m8.25 4.5 7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>

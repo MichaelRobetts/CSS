@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* ------------------------ */
+      /* GENERAL STYLES */
+      /* ------------------------ */
+      body {
+        font-family: sans-serif;
+        color: #343a40;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 1200px;
+        padding-top: 12px;
+        height: 60px;
+      }
+      p {
+        font-size: 38px;
+      }
+      .buttons {
+        display: flex;
+        gap: 24px;
+      }
+      .button {
+        background: none;
+        background-color: none;
+        border: none;
+        font-size: 18px;
+      }
+      .final-btns {
+        display: flex;
+        gap: 12px;
+      }
+
+      .login-btn,
+      .booking-btn {
+        border: 1px solid black;
+        background: none;
+        padding: 10px 20px;
+        border-radius: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <p>deel.</p>
+        <div class="buttons">
+          <button class="button">Platform</button>
+          <button class="button">Solution</button>
+          <button class="button">Why Deel?</button>
+          <button class="button">coverage</button>
+          <button class="button">Pricing</button>
+          <button class="button">Ressources</button>
+        </div>
+        <div class="final-btns">
+          <button class="login-btn">Login</button>
+          <button class="booking-btn">Book a demo</button>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
