@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+    }
+
+    body {
+      font-size: 62.5%;
+      background-color: #333;
+      color: #333;
+
+    }
+
+    label {
+      font-size: 1rem;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 70em;
+      width: 60em;
+      max-width: 90%;
+      background-color: #fff;
+      align-items: center;
+      margin: 8rem auto;
+      border-radius: 2rem;
+
+    }
+
+    .form {
+      margin: 40px auto;
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 60vh;
+      gap: 20px;
+      flex: 1 1 auto;
+    }
+
+    .container-name {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+
+    }
+
+    .container-name-element {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      gap: 8px;
+    }
+
+    .container-name-message .message {
+      padding: 40px;
+      width: 100%;
+
+    }
+
+    .container-name-message {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .container-name-element input,
+    .container-email input,
+    .container-query input {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background: none;
+      border: 1px solid #333;
+      border-radius: 5px;
+
+    }
+
+    .container-email {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .container-name-message .message {
+      background: none;
+      border: 1px solid #333;
+      border-radius: 10px;
+    }
+
+    .container-query {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .query-input {
+      display: flex;
+      gap: 20px;
+    }
+
+    .checkbox-container {
+      display: flex;
+    }
+
+
+
+    .checkbox-container p {
+      display: inline-block;
+    }
+
+    button {
+      background: none;
+      border: 1px solid #333;
+      padding: 12px;
+      border-radius: 8px;
+      background-color: #333;
+      color: #fff;
+      font-size: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        height: 80em;
+      }
+
+      .container-name {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: start;
+        font-size: 16px;
+      }
+
+      .container-name-element {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 8px;
+      }
+
+      .query-input {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .checkbox-container p {
+        font-size: 12px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .button {
+        width: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <form action="submit" class="form">
+      <h1 class="header">Contact Us</h1>
+      <div class="container-name">
+        <div class="container-name-element">
+          <label for="firstname" class="firstname">First Name <span class="asterist">*</span></label>
+          <input type="text" class="name" required id="firsname" placeholder="Enter your first name">
+        </div>
+        <div class="container-name-element">
+          <label for="lastname" class="lastaname">Last Name <span class="asterist">*</span></label>
+          <input type="text" class="name" required id="lastname" placeholder="Enter your last name">
+        </div>
+      </div>
+      <div class="container-email">
+        <label for="email" class="email"> Email <span class="asterist">*</span></label>
+        <input type="email" class="email" required id="email" placeholder="example@gmail.com">
+      </div>
+      <div class="container-query">
+        <label for="lastname" class="lastaname">Query Type <span class="asterist">*</span></label>
+        <div class="query-input">
+          <input type="text" class="name" required id="lastname" placeholder="General query">
+          <input type="text" class="name" required id="lastname" placeholder="Suppport query">
+        </div>
+
+      </div>
+      <div class="container-name-message">
+        <label for="email" class="email"> Message <span class="asterist">*</span></label>
+        <input type="email" class="message" required id="email">
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" required>
+        <p>&nbsp; I consent to being contacted by the team</p>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>
