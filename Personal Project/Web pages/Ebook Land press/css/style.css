@@ -1,0 +1,21 @@
+/*
+COLORS
+*/
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border: 1px solid #F0F5FE;
+  border-radius: 15px; }
+
+.profile {
+  display: flex; }
+  .profile__img {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem; }
+    .profile__img img {
+      width: 100%;
+      display: inline-block;
+      border: 1px solid green;
+      border-radius: 50%; }

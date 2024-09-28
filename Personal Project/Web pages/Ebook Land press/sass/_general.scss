@@ -1,0 +1,22 @@
+$--global-color-primary: #276EF1;
+$--global-color-text: #111827;
+$--global-color-accent: #276EF1;
+$--global-color-secondary: #111827;
+$--global-color-light: #F0F5FE;
+$--color-text: #6B7280;
+$--font-size-default: 1.2rem;
+$--font-size-small: 1.6rem;
+$--color-border: #E5E7EB;
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: inherit;
+}
+
+body {
+    font-size: 62.5%;
+}
