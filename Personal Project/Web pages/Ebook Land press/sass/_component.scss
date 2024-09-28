@@ -1,0 +1,39 @@
+$--global-color-primary: #276EF1;
+$--global-color-text: #111827;
+$--global-color-accent: #276EF1;
+$--global-color-secondary: #111827;
+$--global-color-light: #F0F5FE;
+$--color-text: #6B7280;
+$--font-size-default: 1.2rem;
+$--font-size-small: 1.6rem;
+$--color-border: #E5E7EB;
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: 1px solid $--global-color-light;
+    border-radius: 15px;
+}
+
+.profile {
+    display: flex;
+
+    &__img {
+        width: 4rem;
+        height: 4rem;
+        margin-right: 1rem;
+
+
+        & img {
+            width: 100%;
+            display: inline-block;
+            border: 1px solid green;
+            border-radius: 50%;
+
+
+        }
+    }
+
+    &__description {}
+}
