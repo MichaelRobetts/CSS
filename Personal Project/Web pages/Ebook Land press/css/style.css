@@ -3,10 +3,18 @@ COLORS
 */
 .btn {
   display: inline-block;
-  text-decoration: none;
-  padding: 1rem 2rem;
+  padding: .5rem 2rem;
   border: 1px solid #F0F5FE;
-  border-radius: 15px; }
+  border-radius: 20px;
+  text-decoration: none; }
+
+.color-btn-blue {
+  background-color: #276EF1;
+  color: #F0F5FE; }
+
+.color-btn-grey {
+  background-color: #4a4f58;
+  color: #F0F5FE; }
 
 .profile {
   display: flex; }
@@ -35,7 +43,8 @@ COLORS
   padding: 1rem;
   border: 1px solid grey;
   border-top-left-radius: 1.2rem;
-  border-bottom-left-radius: 1.2rem; }
+  border-bottom-left-radius: 1.2rem;
+  z-index: 100; }
   .aside__cart {
     border-bottom: 1px solid grey;
     padding-bottom: 0.5rem;
@@ -81,8 +90,7 @@ COLORS
     transform: translate(0); } }
 
 .feature {
-  width: 4rem;
-  height: 4rem; }
+  width: 20rem; }
   .feature__card {
     position: relative;
     /* Add this to make sure the circle is positioned relative to the icon container */
@@ -90,8 +98,7 @@ COLORS
     z-index: 10;
     height: 2rem;
     width: 2rem;
-    display: inline-block;
-    /* Ensure it behaves like a block element */ }
+    display: inline-block; }
     .feature__card::after {
       content: "";
       width: 4rem;
@@ -103,7 +110,44 @@ COLORS
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      z-index: -1; }
+      z-index: -1;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
     .feature__card ion-icon {
       width: 2rem;
       height: 2rem; }
+  .feature h3 {
+    font-size: 1.8rem;
+    color: #4a4f58; }
+  .feature p {
+    font-size: 1.2rem;
+    color: #4a4f58; }
+
+.header {
+  margin-inline: 15vw;
+  height: 140vh; }
+  .header__general-description {
+    display: flex;
+    justify-content: space-between; }
+  .header__img {
+    margin-right: 4rem;
+    width: 15vw;
+    height: 15vh; }
+    .header__img img {
+      width: 100%; }
+  .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    width: 100; }
+    .header__nav p {
+      font-size: 1.6rem; }
+    .header__nav ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style: none; }
+      .header__nav ul li a {
+        text-decoration: none;
+        margin-right: 3rem;
+        font-size: 1.2rem; }

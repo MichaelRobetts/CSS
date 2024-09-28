@@ -3,7 +3,7 @@ $--global-color-text: #111827;
 $--global-color-accent: #276EF1;
 $--global-color-secondary: #111827;
 $--global-color-light: #F0F5FE;
-$--color-text: #6B7280;
+$--color-text: #4a4f58;
 $--font-size-default: 1.2rem;
 $--font-size-small: 1.6rem;
 $--color-border: #E5E7EB;
@@ -12,11 +12,23 @@ $--global-color-bakcground-feature: rgb(236, 230, 230);
 
 .btn {
     display: inline-block;
-    text-decoration: none;
-    padding: 1rem 2rem;
+    padding: .5rem 2rem;
     border: 1px solid $--global-color-light;
-    border-radius: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+
 }
+
+.color-btn-blue {
+    background-color: $--global-color-accent;
+    color: $--global-color-light;
+}
+
+.color-btn-grey {
+    background-color: $--color-text;
+    color: $--global-color-light;
+}
+
 
 .profile {
     display: flex;
@@ -58,6 +70,7 @@ $--global-color-bakcground-feature: rgb(236, 230, 230);
     border: 1px solid grey;
     border-top-left-radius: 1.2rem;
     border-bottom-left-radius: 1.2rem;
+    z-index: 100;
 
     &__cart {
 
@@ -131,8 +144,7 @@ $--global-color-bakcground-feature: rgb(236, 230, 230);
 }
 
 .feature {
-    width: 4rem;
-    height: 4rem;
+    width: 20rem;
 
     &__card {
         position: relative;
@@ -142,7 +154,6 @@ $--global-color-bakcground-feature: rgb(236, 230, 230);
         height: 2rem;
         width: 2rem;
         display: inline-block;
-        /* Ensure it behaves like a block element */
 
         &::after {
             content: "";
@@ -156,11 +167,67 @@ $--global-color-bakcground-feature: rgb(236, 230, 230);
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: -1;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         & ion-icon {
             width: 2rem;
             height: 2rem;
+        }
+    }
+
+    & h3 {
+        font-size: 1.8rem;
+        color: $--color-text;
+    }
+
+    & p {
+        font-size: 1.2rem;
+        color: $--color-text;
+    }
+}
+
+.header {
+    margin-inline: 15vw;
+    height: 140vh;
+
+    &__general-description {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__img {
+        margin-right: 4rem;
+        width: 15vw;
+        height: 15vh;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 6rem;
+        width: 100;
+
+        & p {
+            font-size: $--font-size-small;
+        }
+
+        & ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+
+            & li a {
+                text-decoration: none;
+                margin-right: 3rem;
+                font-size: 1.2rem;
+            }
         }
     }
 }
