@@ -1,0 +1,41 @@
+body {
+    display: flex;
+}
+
+@media only screen and (max-width: 60em) {
+    body {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+}
+
+#navbar {
+    width: 50vw;
+    height: 100vh;
+
+}
+
+#nav-bar ul {
+    list-style-type: none;
+}
+
+
+#nav-bar li:not(:last-child) {
+    border-bottom: 1px solid #333;
+}
+
+header {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+main {
+    margin-left: 2rem;
+    border-left: 2px solid #333;
+    margin-bottom: -20rem;
+    padding-left: 1rem;
+}
+
+main * p {
+    margin-bottom: 2rem;
+}

@@ -19,3 +19,91 @@ COLORS
       display: inline-block;
       border: 1px solid green;
       border-radius: 50%; }
+  .profile__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    .profile__description p {
+      display: inline-block;
+      margin: 0; }
+
+.aside {
+  position: fixed;
+  right: 0;
+  top: 25vh;
+  width: 1rem;
+  padding: 1rem;
+  border: 1px solid grey;
+  border-top-left-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem; }
+  .aside__cart {
+    border-bottom: 1px solid grey;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .aside__cart:hover p {
+      display: inline-block;
+      animation: moveInRight .2s; }
+    .aside__cart-icon {
+      width: 100%;
+      height: 100%; }
+  .aside p {
+    position: absolute;
+    right: 3.5rem;
+    width: 10rem;
+    border: 1px solid black;
+    background-color: #f0f5fe;
+    padding: .6rem;
+    border-radius: 1rem;
+    display: none;
+    color: #276EF1; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+.feature {
+  width: 4rem;
+  height: 4rem; }
+  .feature__card {
+    position: relative;
+    /* Add this to make sure the circle is positioned relative to the icon container */
+    color: #276EF1;
+    z-index: 10;
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    /* Ensure it behaves like a block element */ }
+    .feature__card::after {
+      content: "";
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      border: 1px solid #276EF1;
+      position: absolute;
+      background-color: #ece6e6;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1; }
+    .feature__card ion-icon {
+      width: 2rem;
+      height: 2rem; }
