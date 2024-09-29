@@ -16,6 +16,8 @@ $--global-color-bakcground-feature: rgb(236, 230, 230);
     border: 1px solid $--global-color-light;
     border-radius: 20px;
     text-decoration: none;
+    font-size: 1.2rem;
+    margin-left: 1rem;
 
 }
 
@@ -28,7 +30,6 @@ $--global-color-bakcground-feature: rgb(236, 230, 230);
     background-color: $--color-text;
     color: $--global-color-light;
 }
-
 
 .profile {
     display: flex;
@@ -70,7 +71,6 @@ $--global-color-bakcground-feature: rgb(236, 230, 230);
     border: 1px solid grey;
     border-top-left-radius: 1.2rem;
     border-bottom-left-radius: 1.2rem;
-    z-index: 100;
 
     &__cart {
 
@@ -188,18 +188,34 @@ $--global-color-bakcground-feature: rgb(236, 230, 230);
 }
 
 .header {
-    margin-inline: 15vw;
+
+    &__container {
+        background-image: url("../images/gradient-hero.svg");
+        background-size: cover;
+        background-color: #111827;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    margin-inline: 20vw;
     height: 140vh;
 
     &__general-description {
         display: flex;
         justify-content: space-between;
+
+        & p {
+            font-size: $--font-size-small;
+            color: $--global-color-light;
+            margin-bottom: 2rem;
+        }
     }
 
     &__img {
         margin-right: 4rem;
-        width: 15vw;
-        height: 15vh;
+        margin-top: -2rem;
+        width: 17svw;
+        height: 12vh;
 
         & img {
             width: 100%;
@@ -212,10 +228,7 @@ $--global-color-bakcground-feature: rgb(236, 230, 230);
         justify-content: space-between;
         height: 6rem;
         width: 100;
-
-        & p {
-            font-size: $--font-size-small;
-        }
+        margin-bottom: 8rem;
 
         & ul {
             display: flex;
@@ -227,6 +240,7 @@ $--global-color-bakcground-feature: rgb(236, 230, 230);
                 text-decoration: none;
                 margin-right: 3rem;
                 font-size: 1.2rem;
+                color: white;
             }
         }
     }

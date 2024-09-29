@@ -1,12 +1,34 @@
 /*
 COLORS
 */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: inherit; }
+
+body {
+  font-size: 62.5%; }
+
+h1 {
+  font-size: 4rem;
+  color: #F0F5FE;
+  margin-bottom: 2rem; }
+
+.blue-underline {
+  color: #276EF1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); }
+
 .btn {
   display: inline-block;
   padding: .5rem 2rem;
   border: 1px solid #F0F5FE;
   border-radius: 20px;
-  text-decoration: none; }
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-left: 1rem; }
 
 .color-btn-blue {
   background-color: #276EF1;
@@ -43,8 +65,7 @@ COLORS
   padding: 1rem;
   border: 1px solid grey;
   border-top-left-radius: 1.2rem;
-  border-bottom-left-radius: 1.2rem;
-  z-index: 100; }
+  border-bottom-left-radius: 1.2rem; }
   .aside__cart {
     border-bottom: 1px solid grey;
     padding-bottom: 0.5rem;
@@ -123,15 +144,26 @@ COLORS
     color: #4a4f58; }
 
 .header {
-  margin-inline: 15vw;
+  margin-inline: 20vw;
   height: 140vh; }
+  .header__container {
+    background-image: url("../images/gradient-hero.svg");
+    background-size: cover;
+    background-color: #111827;
+    background-repeat: no-repeat;
+    background-position: center; }
   .header__general-description {
     display: flex;
     justify-content: space-between; }
+    .header__general-description p {
+      font-size: 1.6rem;
+      color: #F0F5FE;
+      margin-bottom: 2rem; }
   .header__img {
     margin-right: 4rem;
-    width: 15vw;
-    height: 15vh; }
+    margin-top: -2rem;
+    width: 17svw;
+    height: 12vh; }
     .header__img img {
       width: 100%; }
   .header__nav {
@@ -139,9 +171,8 @@ COLORS
     align-items: center;
     justify-content: space-between;
     height: 6rem;
-    width: 100; }
-    .header__nav p {
-      font-size: 1.6rem; }
+    width: 100;
+    margin-bottom: 8rem; }
     .header__nav ul {
       display: flex;
       align-items: center;
@@ -150,4 +181,5 @@ COLORS
       .header__nav ul li a {
         text-decoration: none;
         margin-right: 3rem;
-        font-size: 1.2rem; }
+        font-size: 1.2rem;
+        color: white; }
