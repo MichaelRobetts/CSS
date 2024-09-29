@@ -1,12 +1,42 @@
 /*
 COLORS
 */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: inherit; }
+
+body {
+  font-size: 62.5%; }
+
+h1 {
+  font-size: 4rem;
+  color: #F0F5FE;
+  margin-bottom: 2rem; }
+
+.blue-underline {
+  color: #276EF1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); }
+
 .btn {
   display: inline-block;
-  text-decoration: none;
-  padding: 1rem 2rem;
+  padding: .5rem 2rem;
   border: 1px solid #F0F5FE;
-  border-radius: 15px; }
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-left: 1rem; }
+
+.color-btn-blue {
+  background-color: #276EF1;
+  color: #F0F5FE; }
+
+.color-btn-grey {
+  background-color: #4a4f58;
+  color: #F0F5FE; }
 
 .profile {
   display: flex; }
@@ -19,3 +49,137 @@ COLORS
       display: inline-block;
       border: 1px solid green;
       border-radius: 50%; }
+  .profile__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    .profile__description p {
+      display: inline-block;
+      margin: 0; }
+
+.aside {
+  position: fixed;
+  right: 0;
+  top: 25vh;
+  width: 1rem;
+  padding: 1rem;
+  border: 1px solid grey;
+  border-top-left-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem; }
+  .aside__cart {
+    border-bottom: 1px solid grey;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .aside__cart:hover p {
+      display: inline-block;
+      animation: moveInRight .2s; }
+    .aside__cart-icon {
+      width: 100%;
+      height: 100%; }
+  .aside p {
+    position: absolute;
+    right: 3.5rem;
+    width: 10rem;
+    border: 1px solid black;
+    background-color: #f0f5fe;
+    padding: .6rem;
+    border-radius: 1rem;
+    display: none;
+    color: #276EF1; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+.feature {
+  width: 20rem; }
+  .feature__card {
+    position: relative;
+    /* Add this to make sure the circle is positioned relative to the icon container */
+    color: #276EF1;
+    z-index: 10;
+    height: 2rem;
+    width: 2rem;
+    display: inline-block; }
+    .feature__card::after {
+      content: "";
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      border: 1px solid #276EF1;
+      position: absolute;
+      background-color: #ece6e6;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+    .feature__card ion-icon {
+      width: 2rem;
+      height: 2rem; }
+  .feature h3 {
+    font-size: 1.8rem;
+    color: #4a4f58; }
+  .feature p {
+    font-size: 1.2rem;
+    color: #4a4f58; }
+
+.header {
+  margin-inline: 8rem;
+  max-height: 140vh; }
+  .header__container {
+    background-image: url("../images/gradient-hero.svg");
+    background-size: cover;
+    background-color: #111827;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .header__general-description {
+    display: flex;
+    justify-content: space-between; }
+    .header__general-description p {
+      font-size: 1.6rem;
+      color: #F0F5FE;
+      margin-bottom: 2rem; }
+  .header__img {
+    margin-right: 4rem;
+    margin-top: -2rem;
+    min-width: 17vw;
+    min-height: 12vh; }
+    .header__img img {
+      min-width: 100%; }
+  .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    width: 100;
+    margin-bottom: 8rem; }
+    .header__nav ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style: none; }
+      .header__nav ul li a {
+        text-decoration: none;
+        margin-right: 3rem;
+        font-size: 1.2rem;
+        color: white; }
