@@ -144,8 +144,8 @@ h1 {
     color: #4a4f58; }
 
 .header {
-  margin-inline: 20vw;
-  height: 140vh; }
+  margin-inline: 8rem;
+  max-height: 140vh; }
   .header__container {
     background-image: url("../images/gradient-hero.svg");
     background-size: cover;
@@ -162,10 +162,10 @@ h1 {
   .header__img {
     margin-right: 4rem;
     margin-top: -2rem;
-    width: 17svw;
-    height: 12vh; }
+    min-width: 17vw;
+    min-height: 12vh; }
     .header__img img {
-      width: 100%; }
+      min-width: 100%; }
   .header__nav {
     display: flex;
     align-items: center;

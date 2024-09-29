@@ -197,8 +197,8 @@ $--global-color-bakcground-feature: rgb(236, 230, 230);
         background-position: center;
     }
 
-    margin-inline: 20vw;
-    height: 140vh;
+    margin-inline: 8rem;
+    max-height: 140vh;
 
     &__general-description {
         display: flex;
@@ -214,11 +214,11 @@ $--global-color-bakcground-feature: rgb(236, 230, 230);
     &__img {
         margin-right: 4rem;
         margin-top: -2rem;
-        width: 17svw;
-        height: 12vh;
+        min-width: 17vw;
+        min-height: 12vh;
 
         & img {
-            width: 100%;
+            min-width: 100%;
         }
     }
 
